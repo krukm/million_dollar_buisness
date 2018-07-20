@@ -8,10 +8,6 @@ nav {
     flex-direction: row;
 }
 
-h1 {
-    
-}
-
 h4 {
     margin: 0;
     flex-grow: 2;
@@ -37,6 +33,10 @@ section {
     align-items: flex-end;
 }
 
+p {
+    padding: 0 1em;
+}
+
 .main_heading {
     align-self: center;
 }
@@ -45,3 +45,31 @@ section {
     align-self: flex-start;
 }
 
+.img3 {
+    display: none;
+}
+
+.image_group {
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    body {
+        font-size: 100%;
+    }
+
+    p {
+        padding: 1em;
+    }
+
+    .img1, .img2 {
+        display: none;
+    }
+
+    .image_group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+ }
